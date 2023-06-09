@@ -189,7 +189,7 @@ class main():
     #################
     def _noargs(self):
         print(Fore.CYAN + banner)
-        print("\nhttps://github.com/robi0t\n"+Style.RESET_ALL)
+        print("\nhttps://github.com/franzo15/fzCrack\n"+Style.RESET_ALL)
         archive_dir = input('\nEnter a directory/name to a .zip file > ')
         attack_type = input('Which attack type would you like to run\n0: Bruteforce\t 1: Wordlist > ')
 
