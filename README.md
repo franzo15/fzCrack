@@ -30,6 +30,6 @@ Parallel processing using brute force approach (start the processes in separated
 ```
 python fz.py -f test.zip -b -c 0+2 --min-lenght 1 --max-lenght 4 --stream
 python fz.py -f test.zip -b -c 0+2 --min-lenght 5 --max-lenght 6 --stream
-python fz.py -f test.zip -b -c 0+2 --min-lenght 6 --max-lenght 7 --stream
 python fz.py -f test.zip -b -c 0+2 --min-lenght 7 --max-lenght 8 --stream
+...
 ```
