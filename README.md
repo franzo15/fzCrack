@@ -7,21 +7,29 @@ It was added the support to start multiple process in order to reach the goal fa
 
 The tool could load a word dictionary or can use the brute force approach to unlock the ZIP archive.
 
-#Download
+## Download
 You can clone this repo or simply download the fz.py and manually install the requirements.
 
-#Usage
+## Usage
+```
 python fz.py --help
+```
 
-#Examples
+## Examples
 Word dictionary and stream to stout the complete output of the process
+```
 python fz.py -f test.zip -w rockyou.txt --stream
+```
 
 Brute force with all charset (0-9,a-z,symbols all cases) and stream to stout the complete output of the process (single thread)
+```
 python fz.py -f test.zip -b -c 0+2 --stream
+```
 
-Parallel processing using brute force approach
+Parallel processing using brute force approach (start the processes in separated command prompt or use Terminator with splitted windows)
+```
 python fz.py -f test.zip -b -c 0+2 --min-lenght 1 --max-lenght 4 --stream
 python fz.py -f test.zip -b -c 0+2 --min-lenght 5 --max-lenght 6 --stream
 python fz.py -f test.zip -b -c 0+2 --min-lenght 6 --max-lenght 7 --stream
 python fz.py -f test.zip -b -c 0+2 --min-lenght 7 --max-lenght 8 --stream
+```
